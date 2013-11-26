@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>reader-services</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>Reader :: Services</name>
 
@@ -31,11 +31,11 @@
 <!-- <version>2.0.0-rc1</version>-->
 </dependency>
 
-   <dependency>
+   <!-- <dependency>
    	<groupId>rome</groupId>
    	<artifactId>rome</artifactId>
    	<version>1.0</version>
-   </dependency>
+   </dependency> -->
   </dependencies>
 
   <build>
