@@ -25,11 +25,5 @@
 	</properties>
 
 	<repositories>
-
-		<repository>
-			<id>devjavanet</id>
-			<url>http://download.java.net/maven2/</url>
-		</repository>
-
 	</repositories>
 </project>

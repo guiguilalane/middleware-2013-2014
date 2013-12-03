@@ -12,9 +12,12 @@ import fr.alma.middleware1314.api.User;
 @RequestMapping("user")
 public class UserController {
 	
-	@RequestMapping(value="connect", method=RequestMethod.POST)
+	@RequestMapping(value="connect", method=RequestMethod.GET)
 	@ResponseBody
-	public User connect(@RequestParam(value= "pseudo") String pseudo) {
+	public User connect(@RequestParam(value= "pseudo", required=false) String pseudo) {
+		CassandraConnection cc = new CassandraConnection();
+		cc.connect("127.0.0.1", 9160);
+		cc.close();
 		User u = new User();
 		u.setPseudo(pseudo);
 		return u;
